@@ -9,7 +9,7 @@ jdk:
   #- oraclejdk8
 env:
   global:
-    - tess==foo
+    - tess:=foo
 matrix:
   allow_failures:
     - jdk: oraclejdk7 
