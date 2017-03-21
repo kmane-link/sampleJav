@@ -13,7 +13,8 @@ matrix:
 build:
   ci:
     - java -version  
-    - if [ "$SHIPPABLE_JDK_VERSION" == "oraclejdk7" ]; then foobar; fi
     - echo $custom
+    - if [ "$SHIPPABLE_JDK_VERSION" == "oraclejdk7" ]; then foobar; fi
+    #- echo $custom
 #    - sleep 8m
    
