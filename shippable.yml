@@ -16,7 +16,8 @@ matrix:
       env: 
         - foo: fubu
         - boo: kubu
-
+  allow_failures:
+    - jdk: oraclejdk7
     
 build:
   ci:
@@ -25,7 +26,7 @@ build:
     - echo $test
     - echo $foo
     - echo $boo
-   # - if [ "$SHIPPABLE_JDK_VERSION" == "oraclejdk7" ]; then foobar; fi
+    - if [ "$SHIPPABLE_JDK_VERSION" == "oraclejdk7" ]; then foobar; fi
     #- echo $custom
 #    - sleep 8m
    
