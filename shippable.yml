@@ -7,9 +7,13 @@ jdk:
   - openjdk7
   - oraclejdk7
   #- oraclejdk8
-
+matrix:
+  allow_failures:
+    - jdk: oraclejdk7 
 build:
   ci:
     - java -version  
+    - if [ "$SHIPPABLE_JDK_VERSION" == "oraclejdk7" ]; then foobar; fi
+    - echo $custom
 #    - sleep 8m
    
