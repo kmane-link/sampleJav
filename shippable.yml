@@ -13,12 +13,19 @@ env:
 matrix:
   include:
     - jdk: oraclejdk7 
+      env: 
+        - foo: fubu
+        - boo: kubu
+
+    
 build:
   ci:
     - java -version  
     - echo $custom
     - echo $test
-    - if [ "$SHIPPABLE_JDK_VERSION" == "oraclejdk7" ]; then foobar; fi
+    - echo $foo
+    - echo $boo
+   # - if [ "$SHIPPABLE_JDK_VERSION" == "oraclejdk7" ]; then foobar; fi
     #- echo $custom
 #    - sleep 8m
    
