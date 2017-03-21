@@ -10,6 +10,7 @@ jdk:
 env:
   global:
     - test=foo
+    - over=ride
 matrix:
   include:
     - jdk: oraclejdk7 
@@ -26,6 +27,7 @@ build:
     - echo $test
     - echo $foo
     - echo $boo
+    - echo $over
     - if [ "$SHIPPABLE_JDK_VERSION" == "oraclejdk7" ]; then foobar; fi
     #- echo $custom
 #    - sleep 8m
