@@ -14,7 +14,7 @@ matrix:
   include:
     - jdk: oraclejdk7 
       env: 
-        - foo: fubu
+        - custom: fubu
         - boo: kubu
   allow_failures:
     - jdk: oraclejdk7
