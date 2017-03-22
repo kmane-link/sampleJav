@@ -16,6 +16,8 @@ matrix:
     - jdk: oraclejdk7 
       env: 
         custom: fubu 
+  exclude:
+    - jdk: openjdk7
 #matrix:
  # allow_failures:
   #  - jdk: oraclejdk7 
