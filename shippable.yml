@@ -15,8 +15,8 @@ matrix:
   include:
     - jdk: oraclejdk7 
       env: 
-          custom: fubu 
-          fubu: check
+        custom: fubu 
+        fubu: check
   exclude:
     - jdk: openjdk7
     - jdk: openjdk6
