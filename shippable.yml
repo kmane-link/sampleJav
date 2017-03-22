@@ -16,6 +16,7 @@ matrix:
   include:
     - jdk: oraclejdk7 
       env: 
+          a=b
           custom: fubu 
           fubu: check
   exclude:
