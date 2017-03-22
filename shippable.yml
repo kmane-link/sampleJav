@@ -1,35 +1,59 @@
-# Language setting
-language: java
+#language
+language: php
 
-# Version number
-jdk:
-  - openjdk6
-  - openjdk7
-  #- oraclejdk7
-  #- oraclejdk8
+#Version number
+php:
+  #- 5.4 
+  #- 5.5
+  #- 5.6
+  - 7.0
+
 env:
-  - single=env
-  - multiple=secondenv
-  - secure: SyDlKr87gdksCJxDOf0UvaLla9eG3pbPegmU/NINyufBN/4ekAB7ImU4PbYbi0WHzjIJj3JGbouU3wleYBd4WlnNSm4BztPiUwQ6/1V4w/LkeHihytb09LEbWPE4Emu0IB1AOjGN+r2VM+x5T1OdrgckXLH107YBH2YXJ/GpJREQf2H5fjz/+eMtigQ2ZLLxPzFbf/5iLkZB2QO7gLMVzT6c0zn/EeWuR2y5vGCY80q8QiWHAUWif32Kylxyok4BevcXTrthlQv51SLZwM6gyr7gTxS59ffidt/Tk9k1xqZqrxFXLvTGx7YGdgZd0yHWgGT6Lv9d2U5zAAHbJtnKzQ==
+  global:
+    - BOO: Bar
+    - FOO: TAR 
+      
+  #test12: beta12 #valid
+ # - TEST="bar" # valid   
+  #- ZUB=tub MUB=sub SUG=lig  #valid
+  #- YUB=*rub #valid
+ # - EUG: po@*p #valid
+  #- secure: mF9EtXzRh20IGB5WWKsQqnKnELJ0CWAqIDFtrD6Ny4gaKSXg/NlRwKeZmhdgat0I/gZg19jdPLv0knjbAnBpcXDFGZ67OIP+5E7oXotRSPRKYm+cYXCLfoHrqUerfq6R3khDbYZjuBBUD2e9fbbzdQvgGqEOu6RtUVYtNvntJSxmObOEIrQNzwS7IeYZTa04UEiwMju+o3Ri+YrYDVWCIl3XPZ5CWfqknxaPWKtlYzB6b3lUpPC7CEJRie0eRXuChSAYwUbGaH4HihUvGh7p0HUAYA78pgguYglEZ3MdBPkdDUqU43HeNU4T3bmeeNpEYXrbHM3L36XrMZc9EcXZPQ== #rc=test
+  
 matrix:
   include:
-    - jdk: oraclejdk7 
+    - php: 5.4
       env: 
-        custom: fubu 
-        fubu: check
-  exclude:
-    - jdk: openjdk7
-    - jdk: openjdk6
-#matrix:
- # allow_failures:
-  #  - jdk: oraclejdk7 
+          TODAY: 21mar 
+          TOMO: 22mar 
+          YEST: 20mar
+      #  - secure: j7ToKXvbkZJUazBnuQ/wxWVBUhojh3zg6TPIfuMEEFy43VCbvIPYn7h9vTr051lPeLr9XVemZ0v89KB/XqIk8xB+FquAsbHGFmzh/sa5Vc1zJcARpDEfjqws1uQC1opGYojamvSngxJPbzqosJ4ypbIX1ilQne4QbAgrzDARX8zPpdTocMQo2G9lUxWixJ/RYts4UJ8gW7BR3qiDW9b9Rsky5vWDaIt+q+6J5nqT7ktlYRIRIbP8rwUiR7DlpZYg5WkIOWvzZ88WIIBqTyb4x9AL0VsYcO7tsw+eqyouaG/eYQq6Sg/phiWENT2hz/kQtzVeDVPFiyqYlEET3jI3nQ==
+       # - secure: THDSZ5LMPbHKieZJsc9hHOu16FmJs93ceeJXvI2FqXvgQxRQnh+qC33VdW+TMLkhr8zV7V/MLruFRGVroL9T6dxrDWoQGELm0aI//V+NK9tacwrXFnaP4aBE1GMDdTn2S/vt5BIB3jn8JGbcK2JCGL92JEQN9HCMXjw55i7Piu7odwOVHQ+058jDH52N/tJuwi6BhAU61hWKmVk7rUxzIL+R6bMnaH5K6MMjUskZT0wVt8BSo/NpcJ0oUbj/CBSgYzIO1G/TvW7+wDVYnLCTXWcvVhebmALfpA34J/ZWPOdbVAfca1+OJirYkD53yr6L7wJRoMYRgrTrgX3cU/Tz1g==
+       # - secure: t1v1BucKxPN6JmeW8N2YBgX113EMg2EmnoTvD0/1T483/EByB+WFyhjl/y6WG3iCGhGOdb9KHkgT0ElxfQXAiosKsJ7EIpIVO1T0un3xOqFLpHNhsZU8cVwlY9mGM/Ue3X0/7w4TrswGBmr+eC7BDN8Iw2I+49O4jcC1Vcvr3TLe6gGT9Dn59NO08fgIKzFAmWMNeFepeggRe+uK+yyUkRmbHOvtrsZpRh0MCOOTeaQKt/6VKlf2Tn2vYv+j8Opa1z+SZ9nXGmJkQD/QFpJ3eNXbM6N+Shygf27lyK/IRXl5XvXTxVUkUGtsWBCCws8Yhk04EYMnnK+2VDODrukCKQ==
+         # secure: jYWXrFUtNi26XYZYiOXHRnbcput0pnh04ilIYs9rE9Lfax6+h4EkNNTU1iB6vHqvsGLNid/fyEBI8Ix6VFHbkuiiI0lz+1D/j6wYH75f6u9c4rtcn+o1+ZoVv5LBo4npbOlETTXU6iIpX9phY+a+NB+3QxI7z2d8cVnNKxrShDb75GUEUx9jarxfNRTizdRSAI9n2zl3EYp5kGzcaC9WA2GKG7tKFZjX+ydntT+UaTvxs9LMwwzvz/4ApqUtzTr1SCAQrVuD1Z0DJgUxTwgcCTCahMtFfNkMy/8cHDMWt6QnRUubxfA8m3gHbiHzBaHbRqoHXcCBkFVSQs+YVliiiA==
+    - php: 5.5
+      env: 
+        - ROO=too
+        
 build:
+
   ci:
-    - java -version  
-    - echo $single
-    - echo $multiple
-    #- if [ "$SHIPPABLE_JDK_VERSION" == "oraclejdk7" ]; then foobar; fi
-    - echo $custom
-    - echo $secure
-#    - sleep 8m
-   
+    - php --version
+    - echo "$FOO"
+    - echo "$BOO"
+    - echo "$test12"
+    - echo "$TEST"
+    - echo "$ZUB"
+    - echo "$MUB"
+    - echo "$SUG"
+    - echo "$YUB"
+    - echo "$EUG"   
+    - echo "$RC"
+    - echo "$THREE" #custom build env key
+    - echo "$FOUR" #custom build env key
+    - echo "$ROO"
+    - echo "$ME"
+    - echo "$TODAY"
+    - echo "$TOMO"
+    - echo "$YEST"
+    - echo "$two"
