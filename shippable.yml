@@ -10,16 +10,20 @@ jdk:
 env:
   global:
     - test=foo
-    - over:=ride
+  matrix:
+   - M1=one
+   
+  # - over:=ride
 matrix:
   include:
     - jdk: oraclejdk7 
       env: 
         - custom: one7
         - boo: kubu
-    - jdk: openjdk6 
-      env: 
-        - custom: one6
+        - M1=one
+   # - jdk: openjdk6 
+    #  env: 
+     #   - custom: one6
        # - boo: kubu
   #allow_failures:
   #  - jdk: oraclejdk7
