@@ -17,7 +17,7 @@ matrix:
       env: 
         - custom: one7
         - boo: kubu
-    - jdk: oraclejdk7 
+    - jdk: openjdk6 
       env: 
         - custom: one6
        # - boo: kubu
@@ -32,6 +32,7 @@ build:
     - echo $foo
     - echo $boo
     - echo $over
+    - echo $env
    # - if [ "$SHIPPABLE_JDK_VERSION" == "oraclejdk7" ]; then foobar; fi
     #- echo $custom
 #    - sleep 8m
