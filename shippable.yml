@@ -7,9 +7,12 @@ jdk:
   - openjdk7
   - oraclejdk7
   #- oraclejdk8
-matrix:
-  allow_failures:
-    - jdk: oraclejdk7 
+env:
+  - single=env
+ 
+#matrix:
+ # allow_failures:
+  #  - jdk: oraclejdk7 
 build:
   ci:
     - java -version  
