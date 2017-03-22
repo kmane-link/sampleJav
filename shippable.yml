@@ -16,8 +16,8 @@ env:
 build:
   ci:
     - java -version  
-    - echo $custom
-    - if [ "$SHIPPABLE_JDK_VERSION" == "oraclejdk7" ]; then foobar; fi
+    - echo $single
+    #- if [ "$SHIPPABLE_JDK_VERSION" == "oraclejdk7" ]; then foobar; fi
     #- echo $custom
 #    - sleep 8m
    
