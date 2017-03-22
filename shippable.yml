@@ -11,9 +11,11 @@ env:
   global:
     - test=foo
     - tree: leaf
+    - secure: UvpOU5JpXxX6vCFA2SxHriHCQVNrPveUtNFnzwEcjRWNyNIQHA6obNJSdDcWzBvw20QAG/eYdjVQX/IWLQ02RppLhYJXE1okdZemQK+4otpBrPjoEDPtJNTi0CA0/G4a+sPo2HGdw558dcAz17/zk4J1l9J8fX/OcT5zXblUv9LaWs1WqXaCXcbbbZFPfQszii1LbHPRyGt9ymAee147/F+nD0t4r8FkUS/njnpvo6tT5hMaTHXkHE1EfL6N4+1oNZuAIZs65NIDeoU4vWk2wR9FMJTYPVGsIVix8zNNHjQU3TdKdfPtWZCAjviLql9V75RnP2T8VMgxCD47vtWwYA==
   matrix:
    - M1=one
    - M2: two
+   - secure: UvpOU5JpXxX6vCFA2SxHriHCQVNrPveUtNFnzwEcjRWNyNIQHA6obNJSdDcWzBvw20QAG/eYdjVQX/IWLQ02RppLhYJXE1okdZemQK+4otpBrPjoEDPtJNTi0CA0/G4a+sPo2HGdw558dcAz17/zk4J1l9J8fX/OcT5zXblUv9LaWs1WqXaCXcbbbZFPfQszii1LbHPRyGt9ymAee147/F+nD0t4r8FkUS/njnpvo6tT5hMaTHXkHE1EfL6N4+1oNZuAIZs65NIDeoU4vWk2wR9FMJTYPVGsIVix8zNNHjQU3TdKdfPtWZCAjviLql9V75RnP2T8VMgxCD47vtWwYA==
    
   # - over:=ride
 matrix:
