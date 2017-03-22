@@ -12,11 +12,12 @@ env:
     - test=foo
     - tree: leaf
     - secure: UvpOU5JpXxX6vCFA2SxHriHCQVNrPveUtNFnzwEcjRWNyNIQHA6obNJSdDcWzBvw20QAG/eYdjVQX/IWLQ02RppLhYJXE1okdZemQK+4otpBrPjoEDPtJNTi0CA0/G4a+sPo2HGdw558dcAz17/zk4J1l9J8fX/OcT5zXblUv9LaWs1WqXaCXcbbbZFPfQszii1LbHPRyGt9ymAee147/F+nD0t4r8FkUS/njnpvo6tT5hMaTHXkHE1EfL6N4+1oNZuAIZs65NIDeoU4vWk2wR9FMJTYPVGsIVix8zNNHjQU3TdKdfPtWZCAjviLql9V75RnP2T8VMgxCD47vtWwYA==
+    - secure: aIsXR3a3vzf+hsOR1Fn1iPHHoaBnUMAYOOGgHtKwptM8QgO+aJk87nMDVkxmimkHp56cxAV2fMn9e7OpGuG8MG5t5YeX560G9j6zf1UNRDLqgGimkWMXSmYszTrFA4VKG9OPEAzDikH89BPGMoVKzhLwNs/hoh7MKNtZhPoHzf4iDDxOdRNQVrLTp9RT/5Dr9db256xE96wi6h/yxbQVxEO8GPp2o6AdCgnHIkXw7pO1kVHuYt/+mbe05fx7mzeGCzcG3D6UQkXFU5CzLGNoHKwz69mgocdjFtkDh2ZqwbgFkw7CmrpZcM6JyMNvc6tF86NoGWS4+Ixx7bcXDiDGvQ==
   matrix:
    - M1=one
    - M2: two
    - secure: UvpOU5JpXxX6vCFA2SxHriHCQVNrPveUtNFnzwEcjRWNyNIQHA6obNJSdDcWzBvw20QAG/eYdjVQX/IWLQ02RppLhYJXE1okdZemQK+4otpBrPjoEDPtJNTi0CA0/G4a+sPo2HGdw558dcAz17/zk4J1l9J8fX/OcT5zXblUv9LaWs1WqXaCXcbbbZFPfQszii1LbHPRyGt9ymAee147/F+nD0t4r8FkUS/njnpvo6tT5hMaTHXkHE1EfL6N4+1oNZuAIZs65NIDeoU4vWk2wR9FMJTYPVGsIVix8zNNHjQU3TdKdfPtWZCAjviLql9V75RnP2T8VMgxCD47vtWwYA==
-   
+   - secure: aIsXR3a3vzf+hsOR1Fn1iPHHoaBnUMAYOOGgHtKwptM8QgO+aJk87nMDVkxmimkHp56cxAV2fMn9e7OpGuG8MG5t5YeX560G9j6zf1UNRDLqgGimkWMXSmYszTrFA4VKG9OPEAzDikH89BPGMoVKzhLwNs/hoh7MKNtZhPoHzf4iDDxOdRNQVrLTp9RT/5Dr9db256xE96wi6h/yxbQVxEO8GPp2o6AdCgnHIkXw7pO1kVHuYt/+mbe05fx7mzeGCzcG3D6UQkXFU5CzLGNoHKwz69mgocdjFtkDh2ZqwbgFkw7CmrpZcM6JyMNvc6tF86NoGWS4+Ixx7bcXDiDGvQ==
   # - over:=ride
 matrix:
   include:
@@ -25,6 +26,7 @@ matrix:
         - custom: one7
         - boo: kubu
         - M1=one
+        - secure: aIsXR3a3vzf+hsOR1Fn1iPHHoaBnUMAYOOGgHtKwptM8QgO+aJk87nMDVkxmimkHp56cxAV2fMn9e7OpGuG8MG5t5YeX560G9j6zf1UNRDLqgGimkWMXSmYszTrFA4VKG9OPEAzDikH89BPGMoVKzhLwNs/hoh7MKNtZhPoHzf4iDDxOdRNQVrLTp9RT/5Dr9db256xE96wi6h/yxbQVxEO8GPp2o6AdCgnHIkXw7pO1kVHuYt/+mbe05fx7mzeGCzcG3D6UQkXFU5CzLGNoHKwz69mgocdjFtkDh2ZqwbgFkw7CmrpZcM6JyMNvc6tF86NoGWS4+Ixx7bcXDiDGvQ==
    # - jdk: openjdk6 
     #  env: 
      #   - custom: one6
@@ -45,6 +47,7 @@ build:
     - echo $M2
     - echo $tree
     - echo $secure
+    - echo $secure1
    # - if [ "$SHIPPABLE_JDK_VERSION" == "oraclejdk7" ]; then foobar; fi
     #- echo $custom
 #    - sleep 8m
