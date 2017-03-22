@@ -17,6 +17,7 @@ matrix:
     - jdk: oraclejdk7 
       env: 
         - env1=one
+        - custom=check
 #matrix:
  # allow_failures:
   #  - jdk: oraclejdk7 
