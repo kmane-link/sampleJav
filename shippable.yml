@@ -10,7 +10,7 @@ jdk:
 env:
   global:
     - test=foo
-    - over=ride
+    - over:=ride
 matrix:
   include:
     - jdk: oraclejdk7 
