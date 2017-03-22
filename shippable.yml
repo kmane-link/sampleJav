@@ -10,8 +10,10 @@ jdk:
 env:
   global:
     - test=foo
+    - tree: leaf
   matrix:
    - M1=one
+   - M2: two
    
   # - over:=ride
 matrix:
@@ -37,6 +39,9 @@ build:
     - echo $boo
     - echo $over
     - echo $env
+    - echo $M1
+    - echo $M2
+    - echo $tree
    # - if [ "$SHIPPABLE_JDK_VERSION" == "oraclejdk7" ]; then foobar; fi
     #- echo $custom
 #    - sleep 8m
