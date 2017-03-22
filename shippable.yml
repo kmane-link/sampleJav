@@ -9,6 +9,7 @@ jdk:
   #- oraclejdk8
 env:
   - single=env
+  - multiple=secondenv
  
 #matrix:
  # allow_failures:
@@ -17,6 +18,7 @@ build:
   ci:
     - java -version  
     - echo $single
+    - echo $multiple
     #- if [ "$SHIPPABLE_JDK_VERSION" == "oraclejdk7" ]; then foobar; fi
     - echo $custom
 #    - sleep 8m
