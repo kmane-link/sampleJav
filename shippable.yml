@@ -31,6 +31,10 @@ build:
     - java -version  
     - echo $single
     - echo $multiple
+    - echo $a
+    - echo $custom
+    - echo $fubu
+    
    # - sleep 9m
     #- if [ "$SHIPPABLE_JDK_VERSION" == "oraclejdk7" ]; then foobar; fi
     - echo $custom
