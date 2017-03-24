@@ -16,7 +16,7 @@ matrix:
   include:
     - jdk: oraclejdk7 
       env: 
-           a: b
+           a: 2b
            custom: fubu 
            fubu: check
     - jdk: openjdk7
