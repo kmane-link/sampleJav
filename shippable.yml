@@ -24,9 +24,9 @@ matrix:
   include:
     - php: 5.4
       env: 
-          TODAY: 21mar 
-          TOMO: 22mar 
-          YEST: 20mar
+        - TODAY: 21mar 
+        - TOMO: 22mar 
+        - YEST: 20mar
       #  - secure: j7ToKXvbkZJUazBnuQ/wxWVBUhojh3zg6TPIfuMEEFy43VCbvIPYn7h9vTr051lPeLr9XVemZ0v89KB/XqIk8xB+FquAsbHGFmzh/sa5Vc1zJcARpDEfjqws1uQC1opGYojamvSngxJPbzqosJ4ypbIX1ilQne4QbAgrzDARX8zPpdTocMQo2G9lUxWixJ/RYts4UJ8gW7BR3qiDW9b9Rsky5vWDaIt+q+6J5nqT7ktlYRIRIbP8rwUiR7DlpZYg5WkIOWvzZ88WIIBqTyb4x9AL0VsYcO7tsw+eqyouaG/eYQq6Sg/phiWENT2hz/kQtzVeDVPFiyqYlEET3jI3nQ==
        # - secure: THDSZ5LMPbHKieZJsc9hHOu16FmJs93ceeJXvI2FqXvgQxRQnh+qC33VdW+TMLkhr8zV7V/MLruFRGVroL9T6dxrDWoQGELm0aI//V+NK9tacwrXFnaP4aBE1GMDdTn2S/vt5BIB3jn8JGbcK2JCGL92JEQN9HCMXjw55i7Piu7odwOVHQ+058jDH52N/tJuwi6BhAU61hWKmVk7rUxzIL+R6bMnaH5K6MMjUskZT0wVt8BSo/NpcJ0oUbj/CBSgYzIO1G/TvW7+wDVYnLCTXWcvVhebmALfpA34J/ZWPOdbVAfca1+OJirYkD53yr6L7wJRoMYRgrTrgX3cU/Tz1g==
        # - secure: t1v1BucKxPN6JmeW8N2YBgX113EMg2EmnoTvD0/1T483/EByB+WFyhjl/y6WG3iCGhGOdb9KHkgT0ElxfQXAiosKsJ7EIpIVO1T0un3xOqFLpHNhsZU8cVwlY9mGM/Ue3X0/7w4TrswGBmr+eC7BDN8Iw2I+49O4jcC1Vcvr3TLe6gGT9Dn59NO08fgIKzFAmWMNeFepeggRe+uK+yyUkRmbHOvtrsZpRh0MCOOTeaQKt/6VKlf2Tn2vYv+j8Opa1z+SZ9nXGmJkQD/QFpJ3eNXbM6N+Shygf27lyK/IRXl5XvXTxVUkUGtsWBCCws8Yhk04EYMnnK+2VDODrukCKQ==
