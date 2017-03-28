@@ -15,7 +15,7 @@ matrix:
   include:
     - jdk: oraclejdk7 
       env: 
-        - custom: fubu
+       # - custom: fubu
         - boo: kubu
 build:
   ci:
@@ -23,7 +23,14 @@ build:
     - echo $custom
     - echo $boo
     - echo $test
+    - echo $ENV
+    - echo $check
+   
    # - if [ "$SHIPPABLE_JDK_VERSION" == "oraclejdk7" ]; then foobar; fi
     #- echo $custom
 #    - sleep 8m
    
+integrations:
+  generic:
+    - integrationName: key-val  
+    
