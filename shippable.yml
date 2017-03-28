@@ -37,6 +37,6 @@ build:
     - echo $secure
     - echo $test
 #    - sleep 8m
- integrations:
+integrations:
   generic:
     - integrationName: key-val  
