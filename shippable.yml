@@ -36,6 +36,7 @@ build:
     - echo $custom
     - echo $secure
     - echo $test
+    - echo $check
 #    - sleep 8m
 integrations:
   generic:
