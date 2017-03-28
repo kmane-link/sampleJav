@@ -12,14 +12,14 @@ env:
     - single=env
     - multiple=secondenv
     - secure: SyDlKr87gdksCJxDOf0UvaLla9eG3pbPegmU/NINyufBN/4ekAB7ImU4PbYbi0WHzjIJj3JGbouU3wleYBd4WlnNSm4BztPiUwQ6/1V4w/LkeHihytb09LEbWPE4Emu0IB1AOjGN+r2VM+x5T1OdrgckXLH107YBH2YXJ/GpJREQf2H5fjz/+eMtigQ2ZLLxPzFbf/5iLkZB2QO7gLMVzT6c0zn/EeWuR2y5vGCY80q8QiWHAUWif32Kylxyok4BevcXTrthlQv51SLZwM6gyr7gTxS59ffidt/Tk9k1xqZqrxFXLvTGx7YGdgZd0yHWgGT6Lv9d2U5zAAHbJtnKzQ==
-matrix:
-  include:
-    - jdk: oraclejdk7 
-      env: 
-           a: b
-           custom: fubu 
-           fubu: check
-    - jdk: openjdk7
+#matrix:
+ # include:
+   # - jdk: oraclejdk7 
+   #   env: 
+    #       a: b
+    #       custom: fubu 
+     #      fubu: check
+   # - jdk: openjdk7
 #  exclude:
  #   - jdk: openjdk7
   #  - jdk: openjdk6
@@ -35,5 +35,6 @@ build:
     #- if [ "$SHIPPABLE_JDK_VERSION" == "oraclejdk7" ]; then foobar; fi
     - echo $custom
     - echo $secure
+    - echo $test
 #    - sleep 8m
    
