@@ -41,17 +41,20 @@ build:
     - echo $ENV
 #    - sleep 8m
 integrations:
-  generic:
-    - integrationName: key-val  
-  notifications:  
+  hub:
+    - integrationName: shippabledocker
+      type: docker
+#  generic:
+  #  - integrationName: key-val  
+  #notifications:  
     
-    - integrationName: project-1 #samplNod project in shiptest-rc-ow will trigger
-      type: webhook
-      payload:
+   # - integrationName: project-1 #samplNod project in shiptest-rc-ow will trigger
+    #  type: webhook
+    #  payload:
        # - BUILD_NUM=$SHIPPABLE_JOB_NUMBER 
-        - BUILD_NUM=$SHIPPABLE_BUILD_NUMBER
-        - FOO=FUBU
-        - GOO=GUBU
-      on_start: always
-      on_success: always
-      on_failure: always   
+     #   - BUILD_NUM=$SHIPPABLE_BUILD_NUMBER
+      #  - FOO=FUBU
+      #  - GOO=GUBU
+     # on_start: always
+     # on_success: always
+     # on_failure: always   
