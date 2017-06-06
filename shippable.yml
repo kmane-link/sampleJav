@@ -44,6 +44,7 @@ integrations:
   hub:
     - integrationName: shippabledocker
       type: docker
+      
 #  generic:
   #  - integrationName: key-val  
   #notifications:  
