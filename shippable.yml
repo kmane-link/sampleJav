@@ -40,10 +40,10 @@ build:
     - echo $check
     - echo $ENV
 #    - sleep 8m
-integrations:
-  hub:
-    - integrationName: shippabledocker
-      type: docker
+#integrations:
+#  hub:
+ #   - integrationName: shippabledocker
+   #   type: docker
       
 #  generic:
   #  - integrationName: key-val  
