@@ -39,7 +39,7 @@ build:
     - echo $custom
     - echo $secure
     - echo $test
-    - echo $check
+    #- echo $check
     #- echo $ENV
 #    - sleep 8m
 #integrations:
