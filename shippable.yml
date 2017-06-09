@@ -40,7 +40,7 @@ build:
     - echo $secure
     - echo $test
     - echo $check
-    - echo $ENV
+    #- echo $ENV
 #    - sleep 8m
 #integrations:
 #  hub:
