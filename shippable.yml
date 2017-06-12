@@ -28,6 +28,6 @@ build:
     - echo $multiple
     #- if [ "$SHIPPABLE_JDK_VERSION" == "oraclejdk7" ]; then foobar; fi
     - echo $custom
-    - echo $secure
+    #- echo $secure
 #    - sleep 8m
    
