@@ -33,7 +33,7 @@ build:
   ci:
     - java -version  
     - echo $single
-    - echo $multiple
+   # - echo $multiple
     #- sleep 5m
    # - sleep 9m
     - if [ "$SHIPPABLE_JDK_VERSION" == "oraclejdk7" ]; then foobar; fi
