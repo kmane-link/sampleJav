@@ -44,9 +44,4 @@ build:
     - echo $check
     - echo $ENV
 #    - sleep 8m
-integrations:
-  generic:
-    - integrationName: key-val  
-    
-    
-    
+
