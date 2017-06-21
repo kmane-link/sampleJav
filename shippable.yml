@@ -13,9 +13,9 @@ jdk:
 build:
   pre_ci:
     - echo The java version is $SHIPPABLE_JDK_VERSION
-    - docker tag drydock/u16javall:master drydock/u16javall:v$SHIPPABLE_JDK_VERSION
+    - docker tag drydock/u14javall:master drydock/u14javall:v$SHIPPABLE_JDK_VERSION
   pre_ci_boot:
-    image_name: drydock/u16javall
+    image_name: drydock/u14javall
     image_tag: v$SHIPPABLE_JDK_VERSION
   ci:
     - echo The java version is $SHIPPABLE_JDK_VERSION
