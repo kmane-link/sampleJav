@@ -9,10 +9,10 @@ jdk:
   #- oraclejdk8
 env:
   global:
-    - single=env1
-    - multiple=check
-    - one=two
-    - two=three
+    #- single=env1
+    #- multiple=check
+    #- one=two
+    #- two=three
     - four=five
     - six=seven
     - secure: j5M+wUJbnU123NCvthi32Fa3IIESe+9AuNaP4jEVo/uW7s4VeF3d0hGybvYh5lLbujDiu/gTJfuUjxc7w80B0c4PvS5T5vf7pGjLnl81WR1CEEQUwguv4sfgb0JiVGZlpweIFkS+p4ALhC91mCi/UpCK6XmOadnlE8mw6BlrwV0wT+jzGSOG3DweFvppEpe364vMq3m+RxlFznBNPzgEGrYOegO6oy0WZXLMi6SI8YsypozHsJwYwmrr4JJJFzHRc379dI8DGMTEtOA+6hnEiguvvjPwjwCkvStK9TWbDEq/8rtHZoYEGLGy6i2CjaODcqRN03mk1FMoTmFEdvoG1w==
