@@ -6,7 +6,7 @@ jdk:
   #- openjdk6
   - openjdk7
  # - oraclejdk7
-  #- oraclejdk8
+  - oraclejdk8
 env:
   global:
     - secure: BNoqmLKmBiwcy3QGVCORFg8VV2w+j8OGIN5qRoSnEfg1OEPcMGjYnry1WzClAysaj06xKjwUtg+6Fi24FSw9qrYpIXVRlNYMrYt7RhR59ZsFKpDKMe4eq7/0XMGHlcMq25WgPW8mX8ZuOOIOmN5mHkmDXAeLFN9DLguthAnmJmN9aMtSso2sXs92V87a+k5wzZe2Q0znI84tGYQKI59H3ffLL9uiMDwrQV+l1DmNSpHsAHasJmZ8pZAx5RKD1kfc+j8JC++zRJKhKYq6bP/G8SlMGdjeH89TXYdA2EboisiGKoYuN41HpAQIz98gTiH4EUIXqF7LS875jWldMqEzFw==
