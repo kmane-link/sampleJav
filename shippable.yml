@@ -7,9 +7,9 @@ jdk:
   - openjdk7
   - oraclejdk7
   #- oraclejdk8
-branches:
-  except:
-    - master
+#branches:
+#  except:
+ #   - master
 env:
   global:
     - single=testverylongenvdisplaysproperlyin-console
