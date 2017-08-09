@@ -57,8 +57,8 @@ build:
     #- echo $check
     #- echo $ENV
 #    - sleep 8m
-
-notifications:
+integrations:
+  notifications:
     - integrationName: email         
       type: email        
       recipients: 
