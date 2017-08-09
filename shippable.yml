@@ -57,6 +57,15 @@ build:
     #- echo $check
     #- echo $ENV
 #    - sleep 8m
+
+notifications:
+    - integrationName: email         
+      type: email        
+      recipients: 
+        - shiptestlink@gmail.com
+        - shiptest.rc.me@gmail.com
+      on_success: always  
+      on_failure: always
 #integrations:
 #  hub:
  #   - integrationName: shippabledocker
