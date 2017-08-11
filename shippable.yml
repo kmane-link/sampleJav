@@ -4,9 +4,9 @@ language: java
 # Version number
 jdk:
   #- openjdk6
-  - openjdk7
+ # - openjdk7
  # - oraclejdk7
-  #- oraclejdk8
+  - oraclejdk8
 #branches:
 #  except:
  #   - master
