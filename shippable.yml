@@ -17,6 +17,7 @@ branches:
     - branch2
   except:
     - master
+
 #matrix:
  # include:
    # - jdk: oraclejdk7 
