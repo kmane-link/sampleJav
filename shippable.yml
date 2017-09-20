@@ -15,8 +15,8 @@ env:
 branches:
   only:
     - branch2
-  except:
-    - master
+ # except:
+   # - master
 
 #matrix:
  # include:
