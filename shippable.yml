@@ -1,92 +1,39 @@
-# Language setting
 language: java
 
-# Version number
 jdk:
-  #- openjdk6
- # - openjdk7
- # - oraclejdk7
-  - oraclejdk8
-#branches:
-#  except:
- #   - master
-env:
-  global:
-    - single=testverylongenvdisplaysproperlyin-console
-    - multiple=testverylongenvdisplaysproperlyin-console123
-    - one=testverylongenvdisplaysproperlyin-console-one
-    - two=testverylongenvdisplaysproperlyin-console-two
-    - three=testverylongenvdisplaysproperlyin-console-three
-    - secure: AALQ2PHOQMewuvqmzqHEbNNP15y2MN14IcELRxNUPpT/cOf2M2GU6LxKqUB/MJlvw+AhEczpSM10taVKpVMApWMFgCqXJMPuxrt3R2gFTBtirjvGicN7Klk0V6WQWeQFrdRVb9WilXBgRzyzfXNUfaK3g4G6qZ1LFWIp43/NWY+dqXH+AUkmKiWz3DwWhyW+0kCwqDzDH/h6Axxvc0UhqUiq3aqeUR3i56tlSImlxi0fqjhF2GU8FvV1Sfp3udPvUjzIusfYV9ZKC/qC5WsoS/uFbFNvGZwqmz/1i7godDOZkrn8qvmxJ/D1O6pTml5/ZlD0mew77BVpRAcpDrWlww==
-    - secure: RhKYn3M93QOqCESsu05CZCEk9NNK/Hxi/SYBLflF9bzCdAaAY4zK5sQVSIr8WtTiFxiEqntj7hCT140MKrQ/rhMHoLLpebeK6epQpxy0nnoHGn/k6TfMoVWYIqrCOlOgDZC/dnQZde/4WMmrejXy+Az208Mvkcj1XUm1oD+uza3NzNwTVm24D+MRDmisL1knch7CR8GE3kUr/5/X3oqKvyHL+viA9UhiZUieyPAbdonYpaVoXhhG8DmDt/G4kH0xAAc/5BiYD4l4aanB/rZUr+QF/uuY1ukz/Qf8dt3EgsA8zKRbntX6/ZTWpgfLODiIxYR5vqnfuNOqm42J4qWYPw==
-    #- one=two
-    #- two=three
-   # - four=five
-   # - six=seven
-   # - secure: j5M+wUJbnU123NCvthi32Fa3IIESe+9AuNaP4jEVo/uW7s4VeF3d0hGybvYh5lLbujDiu/gTJfuUjxc7w80B0c4PvS5T5vf7pGjLnl81WR1CEEQUwguv4sfgb0JiVGZlpweIFkS+p4ALhC91mCi/UpCK6XmOadnlE8mw6BlrwV0wT+jzGSOG3DweFvppEpe364vMq3m+RxlFznBNPzgEGrYOegO6oy0WZXLMi6SI8YsypozHsJwYwmrr4JJJFzHRc379dI8DGMTEtOA+6hnEiguvvjPwjwCkvStK9TWbDEq/8rtHZoYEGLGy6i2CjaODcqRN03mk1FMoTmFEdvoG1w==
-   # - six=seven
-   # - secure: j5M+wUJbnU123NCvthi32Fa3IIESe+9AuNaP4jEVo/uW7s4VeF3d0hGybvYh5lLbujDiu/gTJfuUjxc7w80B0c4PvS5T5vf7pGjLnl81WR1CEEQUwguv4sfgb0JiVGZlpweIFkS+p4ALhC91mCi/UpCK6XmOadnlE8mw6BlrwV0wT+jzGSOG3DweFvppEpe364vMq3m+RxlFznBNPzgEGrYOegO6oy0WZXLMi6SI8YsypozHsJwYwmrr4JJJFzHRc379dI8DGMTEtOA+6hnEiguvvjPwjwCkvStK9TWbDEq/8rtHZoYEGLGy6i2CjaODcqRN03mk1FMoTmFEdvoG1w==
-   # - secure: js41r9OwbjY+d4Q45HyeoOEB6H3r4XdiYQDvhZ3RKwbCH67DbKmyj6udMgQ5VA5bm4hO+7s3slVhEZMDueKJ4e3IGDqS49fEDZxhHDS6nYMxT7o0Kw9Bw44uUhvuQa09sHv8WIal/Vd5PvV2VeGeG30snch0PsdzPAUjqQmtLnacBggJ8pqrRtIld90GAVvTzyIpsaBUwT3bPPvsvrOMtDIXhL3/cMDuxinkWfAfXER9ujXZZdyZKv5BFat3YQ546+VBmrAlrAtYc/frdyjV/qUa5VN0Nps+nQzCXsE7wMd6WJnl4+AxQFuEzXV15g6Qq9tfetWl2yakuY76jyCSxA==
-  #  - secure: SyDlKr87gdksCJxDOf0UvaLla9eG3pbPegmU/NINyufBN/4ekAB7ImU4PbYbi0WHzjIJj3JGbouU3wleYBd4WlnNSm4BztPiUwQ6/1V4w/LkeHihytb09LEbWPE4Emu0IB1AOjGN+r2VM+x5T1OdrgckXLH107YBH2YXJ/GpJREQf2H5fjz/+eMtigQ2ZLLxPzFbf/5iLkZB2QO7gLMVzT6c0zn/EeWuR2y5vGCY80q8QiWHAUWif32Kylxyok4BevcXTrthlQv51SLZwM6gyr7gTxS59ffidt/Tk9k1xqZqrxFXLvTGx7YGdgZd0yHWgGT6Lv9d2U5zAAHbJtnKzQ==
-  matrix:
-    - check=c1
-  #  - c2=c3
-#matrix:
- # include:
-  #  - jdk: oraclejdk7 
-   #    - custom: fubu 
-       # - fubu: check
-   # - jdk: openjdk7
-  #exclude:
-  #  - jdk: openjdk7
-   # - jdk: openjdk6
+   #- openjdk7
+   #- oraclejdk7
+   #- openjdk6
+   - oraclejdk8
 
-  #allow_failures:
-  #  - jdk: oraclejdk7 
 build:
+#  pre_ci:
+ #   - docker build -t=quay.io/shippablequay/hitchcock3_sample_java .
+
+  #pre_ci_boot:
+   # image_name: quay.io/shippablequay/hitchcock3_sample_java
+    #image_tag: latest
+    #pull: false
+    #options: '--privileged=true --net=bridge -e FOO=true -e BOO=false'
+
   ci:
-    - java -version  
-    - echo $single
-   # - echo $multiple
-    #- sleep 5m
-   # - sleep 9m
-   # - if [ "$SHIPPABLE_JDK_VERSION" == "oraclejdk7" ]; then foobar; fi
-    - echo $custom
-    - echo $secure
-    - echo $test
-    - echo $check
-    - echo $single
-    #- echo $ENV
-#    - sleep 8m
+    - ps -eax
+    - ls -al
+
+  post_ci:
+    - docker build -t=quay.io/revathird/hitchcock31 .
+    - docker push quay.io/revathird/hitchcock31
+
 integrations:
-  notifications:
-    - integrationName: email         
-      type: email        
-      recipients: 
-        - shiptestlink@gmail.com
-        - shiptest.rc.me@gmail.com
-      on_success: always  
-      on_failure: always
-#integrations:
-#  hub:
- #   - integrationName: shippabledocker
-   #   type: docker
+  hub:
+    - integrationName: quay-0ct5
+      type: quay.io
+    #  branches:
+     #   only:
+      #    - master
       
-#  generic:
-  #  - integrationName: key-val  
-  #notifications:  
-    
-   # - integrationName: project-1 #samplNod project in shiptest-rc-ow will trigger
-    #  type: webhook
-    #  payload:
-       # - BUILD_NUM=$SHIPPABLE_JOB_NUMBER 
-     #   - BUILD_NUM=$SHIPPABLE_BUILD_NUMBER
-      #  - FOO=FUBU
-      #  - GOO=GUBU
-     # on_start: always
-     # on_success: always
-     # on_failure: always   
-     
+      
+
      
      
      
