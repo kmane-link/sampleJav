@@ -19,7 +19,7 @@ env:
     - three=testverylongenvdisplaysproperlyin-console-three
     - secure: AALQ2PHOQMewuvqmzqHEbNNP15y2MN14IcELRxNUPpT/cOf2M2GU6LxKqUB/MJlvw+AhEczpSM10taVKpVMApWMFgCqXJMPuxrt3R2gFTBtirjvGicN7Klk0V6WQWeQFrdRVb9WilXBgRzyzfXNUfaK3g4G6qZ1LFWIp43/NWY+dqXH+AUkmKiWz3DwWhyW+0kCwqDzDH/h6Axxvc0UhqUiq3aqeUR3i56tlSImlxi0fqjhF2GU8FvV1Sfp3udPvUjzIusfYV9ZKC/qC5WsoS/uFbFNvGZwqmz/1i7godDOZkrn8qvmxJ/D1O6pTml5/ZlD0mew77BVpRAcpDrWlww==
     - secure: RhKYn3M93QOqCESsu05CZCEk9NNK/Hxi/SYBLflF9bzCdAaAY4zK5sQVSIr8WtTiFxiEqntj7hCT140MKrQ/rhMHoLLpebeK6epQpxy0nnoHGn/k6TfMoVWYIqrCOlOgDZC/dnQZde/4WMmrejXy+Az208Mvkcj1XUm1oD+uza3NzNwTVm24D+MRDmisL1knch7CR8GE3kUr/5/X3oqKvyHL+viA9UhiZUieyPAbdonYpaVoXhhG8DmDt/G4kH0xAAc/5BiYD4l4aanB/rZUr+QF/uuY1ukz/Qf8dt3EgsA8zKRbntX6/ZTWpgfLODiIxYR5vqnfuNOqm42J4qWYPw==
-    - test=foo2
+    - test=foo
     #- one=two
     #- two=three
    # - four=five
