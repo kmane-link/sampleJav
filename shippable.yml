@@ -11,9 +11,9 @@ build:
  #   - docker build -t=quay.io/shippablequay/hitchcock3_sample_java .
 
   pre_ci_boot:
-    image_name: quay.io/shippablequay/hitchcock3_sample_java
+    image_name: quay.io/revathird/hitchcock3_sample_java
     image_tag: latest
-    pull: false
+    pull: true
     options: '--privileged=true --net=bridge -e FOO=true -e BOO=false'
 
   ci:
