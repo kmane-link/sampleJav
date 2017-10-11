@@ -7,7 +7,8 @@ jdk:
    - oraclejdk8
 
 build:
-#  pre_ci:
+  pre_ci:
+    - docker build -t=quay.io/revathird/testgeneric:tag1 .
  #   - docker build -t=quay.io/shippablequay/hitchcock3_sample_java .
 
   pre_ci_boot:
@@ -21,8 +22,8 @@ build:
     - ls -al
 
   post_ci:
-    - docker build -t=quay.io/revathird/testgeneric .
-    - docker push quay.io/revathird/testgeneric
+    
+    - docker push quay.io/revathird/testgeneric:tag1
 
 integrations:
   hub:
