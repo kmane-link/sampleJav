@@ -27,7 +27,7 @@ build:
 integrations:
   hub:
     - integrationName: quay-0ct5
-      type: quay.io
+      type: quayLogin
     #  branches:
      #   only:
       #    - master
