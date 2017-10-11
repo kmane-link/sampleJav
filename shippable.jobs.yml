@@ -1,0 +1,13 @@
+jobs:
+  - name: sample-quay-old
+    type: runSh
+    allowPublicAccess: true
+    steps:
+      - IN: sample-script-quay
+        showBuildStatus: true
+      - IN: test_quay_old_cli
+      - TASK:
+        - script: echo "FROM drydock/u14javall:master\nRUN mkdir -p /tmp/runSh" > Dockerfile
+        - script: docker build -t=quay.io/revathird/testnodeimg:runsh .
+        - script: docker push quay.io/revathird/testnodeimg:runsh
+     
