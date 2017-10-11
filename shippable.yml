@@ -11,7 +11,7 @@ build:
  #   - docker build -t=quay.io/shippablequay/hitchcock3_sample_java .
 
   pre_ci_boot:
-    image_name: quay.io/revathird/hitchcock3_sample_java
+    image_name: quay.io/revathird/testnodeimg
     image_tag: latest
     pull: true
     options: '--privileged=true --net=bridge -e FOO=true -e BOO=false'
@@ -21,8 +21,8 @@ build:
     - ls -al
 
   post_ci:
-    - docker build -t=quay.io/revathird/hitchcock31 .
-    - docker push quay.io/revathird/hitchcock31
+    - docker build -t=quay.io/revathird/testgeneric .
+    - docker push quay.io/revathird/testgeneric
 
 integrations:
   hub:
