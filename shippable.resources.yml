@@ -1,5 +1,5 @@
 resources:
-  - name: sample-script-quay
+  - name: sample-script-quay-new
     type: gitRepo
     integration: github
     pointer:
@@ -8,6 +8,6 @@ resources:
       buildOnPullRequest: true  
       buildOnRelease: true                  #optional
       buildOnTagPush: true
-  - name: test_quay_old_cli
+  - name: test_quay_new_cli
     type: cliConfig
-    integration: "quay-0ct5"
+    integration: "test_quay_generic"
