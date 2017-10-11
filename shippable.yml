@@ -8,7 +8,7 @@ jdk:
 
 build:
   pre_ci:
-    - docker build -t=quay.io/shippablequay/testjavaimg  .
+    - docker build -t=quay.io/revathird/testjavaimg .
 
   #pre_ci_boot:
    # image_name: quay.io/shippablequay/hitchcock3_sample_java
