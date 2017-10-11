@@ -7,6 +7,6 @@ jobs:
         showBuildStatus: true
       - IN: test_quay_old_cli
       - TASK:
-        - script: 'ls /build/IN'
+        - script: 'cd /build/IN/sample-script-quay'
         - script: 'docker build -t=quay.io/revathird/testnodeimg:runsh .'
         - script: 'docker push quay.io/revathird/testnodeimg:runsh'
