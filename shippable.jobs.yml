@@ -7,8 +7,6 @@ jobs:
         showBuildStatus: true
       - IN: test_quay_old_cli
       - TASK:
-        #- script: echo "FROM drydock/u14javall:master\nRUN mkdir -p /tmp/runSh" 
-        - script: git clone git@github.com:shiptestlink/sample-script-2.git
-        - script: docker build -t=quay.io/revathird/testnodeimg:runsh .
-        - script: docker push quay.io/revathird/testnodeimg:runsh
-     
+       - script: git clone git@github.com:shiptestlink/sample-script-2.git
+       - script: 'docker build -t=quay.io/revathird/testnodeimg:runsh .'
+       - script: 'docker push quay.io/revathird/testnodeimg:runsh'
