@@ -1,12 +1,12 @@
 jobs:
-  - name: sample-quay-old
+  - name: sample-quay-new
     type: runSh
     allowPublicAccess: true
     steps:
-      - IN: sample-script-quay
+      - IN: sample-script-quay-new
         showBuildStatus: true
-      - IN: test_quay_old_cli
+      - IN: test_quay_new_cli
       - TASK:
-        - script: 'cd /build/IN/sample-script-quay/gitRepo'
-        - script: 'docker build -t=quay.io/revathird/testnodeimg:runsh .'
-        - script: 'docker push quay.io/revathird/testnodeimg:runsh'
+        - script: 'cd /build/IN/sample-script-quay-new/gitRepo'
+        - script: 'docker build -t=quay.io/revathird/testnodeimg:runshnew .'
+        - script: 'docker push quay.io/revathird/testnodeimg:runshnew'
