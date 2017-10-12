@@ -1,13 +1,12 @@
 resources:
-  - name: sample-script-quay
-    type: gitRepo
-    integration: github
+  - name: deploy_aws_img
+    type: image
+    integration: ship-docker
     pointer:
-      sourceName: shiptestlink/sample-script-2
-      branch: master
-      buildOnPullRequest: true  
-      buildOnRelease: true                  #optional
-      buildOnTagPush: true
-  - name: test_quay_old_cli
+      sourceName: "shippabledocker/pipelinev2"
+    seed:
+      versionName: "deploy.2"
+
+  - name: test_aws_cli
     type: cliConfig
     integration: "quay-0ct5"
