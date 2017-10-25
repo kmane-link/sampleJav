@@ -8,11 +8,11 @@ jdk:
 
 build:
   pre_ci:
-    - docker build -t=quay.io/revathird/testgeneric:tag1 .
+    - docker build -t=shippabledocker/testgeneric:tag1 .
  #   - docker build -t=quay.io/shippablequay/hitchcock3_sample_java .
 
   pre_ci_boot:
-    image_name: quay.io/revathird/testnodeimg
+    image_name: shippabledocker/samplenode
     image_tag: latest
     pull: true
     options: '--privileged=true --net=bridge -e FOO=true -e BOO=false'
@@ -23,12 +23,12 @@ build:
 
   post_ci:
     
-    - docker push quay.io/revathird/testgeneric:tag1
+    - docker push shippabledocker/testgeneric:tag1 
 
 integrations:
   hub:
-    - integrationName: test_quay_generic
-      type: quay.io
+    - integrationName: test-docker-new
+      type: dockerRegistryLogin 
     #  branches:
      #   only:
       #    - master
