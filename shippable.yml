@@ -13,7 +13,7 @@ build:
 
   pre_ci_boot:
     image_name: shippabledocker/samplenode
-    image_tag: latest
+    image_tag: docker-preci.16
     pull: true
     options: '--privileged=true --net=bridge -e FOO=true -e BOO=false'
 
