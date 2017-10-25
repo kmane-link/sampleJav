@@ -12,8 +12,8 @@ build:
  #   - docker build -t=quay.io/shippablequay/hitchcock3_sample_java .
 
   pre_ci_boot:
-    image_name: shippabledocker/samplenode
-    image_tag: docker-preci.16
+    image_name: shippabledocker/sample-node
+    image_tag: latest.40
     pull: true
     options: '--privileged=true --net=bridge -e FOO=true -e BOO=false'
 
